@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gulp build && gh-pages -d build"
   },
   "author": "Max",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.1",
@@ -22,8 +23,5 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-html-nosvg": "^1.1.1",
     "sass": "^1.49.9"
-  },
-  "scripts": {
-    "deploy": "gulp build && gh-pages -d build"
   }
 }
